@@ -1,0 +1,97 @@
+body {
+  background-color: #3c3c3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 5px;
+  font-size: 36px;
+}
+
+.subtitle {
+  margin-top: 0;
+  font-size: 16px;
+  color: #d6ecff;
+}
+
+.calculator {
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.display {
+  background-color: #dbdc7e;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.expression {
+  font-size: 16px;
+  color: #555;
+  min-height: 20px;
+}
+
+.result {
+  font-size: 32px;
+  font-weight: bold;
+  color: #222;
+  min-height: 35px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6a6a6a;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #dbdc7e;
+}
+
+button.enter {
+  grid-column: span 2;
+  background-color: #467dc1;
+  color: white;
+  font-weight: bold;
+}
+
+button.enter:hover {
+  background-color: #dbdc7e;
+}
+
+@font-face {
+  font-family: 'Digital';
+  src: url('fonts/digital-7.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.result, .expression {
+  font-family: 'Digital', monospace;
+}
